@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uygulama2</title>
+    <style>
+        * {margin: 0;}
+        * {box-sizing: border-box;}
+        body {margin: 0;}
+        a{color: white;text-decoration: none}
+        .main-header {background-color: palevioletred; padding: 20px;}
+        .main-header__logo {font-size: 21px; font-weight: bold;}
+        .main-nav {display: inline-block; text-align: right; width:calc(100% - 100px) ;}  
+        .main-nav__items {list-style: none; margin: 0; padding: 0;}
+        #main-nav__item {display: inline-block; padding: 20px;}
+        #main-nav__item::before {content: '\2734'; color: white; display: inline-block;} 
+
+        #main-nav__item a:hover {color: darkblue;}
+        #main-nav__item:hover::before {color: darkblue;}
+        #main-nav__item a:active {color: white;}
+        #main-nav__item:active::before {color: white;}
+
+        #text {font-size: 25px; font-weight: bold;background-color:rgb(169, 169, 202); padding-bottom: 700px; padding-top: 20px; padding-left: 20px;}
+        footer {background-color: palevioletred; padding: 60px;}
+
+    
+    </style>
+
+</head>
+<body>
+    <header class="main-header">
+        <a href="#" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li id="main-nav__item"> 
+                     <a href="#" > Home</a>
+                </li>
+                <li id="main-nav__item">
+                      <a href="#" > Movies</a>
+                </li>
+                <li id="main-nav__item"> 
+                     <a href="#" > Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-section">
+        <p id="text">Welcome to MovieApp</p>
+    </div>
+    <footer>
+    </footer>
+
+    
+
+
+
+
+</body>
+</html>
