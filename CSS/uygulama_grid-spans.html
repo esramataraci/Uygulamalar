@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 10px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr) ;
+            gap: 5px;
+
+        }
+
+        .header{
+            text-align: center;
+            background-color: red;
+            grid-column: 1 / 6;
+            padding: 15px;
+            font-size: 25px;
+
+        }
+        .section{
+            grid-area: 2 / 1 / span 3 / span 3;
+            border: 1px solid rgb(199, 198, 198);
+        }
+        .aside{
+            grid-area: 2 / 4 / span 3 / span 2;
+            border: 1px solid rgb(199, 198, 198);;
+        }
+        .article{
+            grid-column: 1 / 6;
+            border: 1px solid rgb(199, 198, 198);;
+        }
+        .article2{
+            grid-area: 6 / 1 / span 2 / span 2;
+            border: 1px solid rgb(199, 198, 198);;
+        }        
+        .article3{
+            grid-area: 6 / 3 / span 2 / span 3;
+            border: 1px solid rgb(199, 198, 198);;
+        }
+        .footer{
+            grid-column: 1/6;
+            border: 1px solid rgb(199, 198, 198);;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Page Header</div>
+        <div class="section">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolor nulla sit voluptate harum rem quae voluptatem laboriosam iure, eligendi fuga, beatae ex facilis? Ratione autem iure officia nihil nostrum repellat error! Praesentium nobis aspernatur voluptates explicabo? Impedit, temporibus minima quae incidunt aspernatur hic ipsam dicta voluptas, a in exercitationem?</p>
+        </div>
+        <div class="aside">
+            <h3>Lorem, ipsum. </h3>
+                <ul>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                </ul>
+        </div>
+        
+        <div class="article">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque repudiandae possimus soluta ipsam maiores. Cum, quae atque quam dolorum quia fuga hic quidem dolorem, veritatis corrupti aliquam dolore accusamus eius quas iusto recusandae qui aliquid placeat suscipit consequatur architecto minus? Non ducimus iste repellendus. Amet saepe minus dolor voluptate inventore?</p>
+        </div>
+        <div class="article2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, eius enim? Aut est excepturi facere numquam. Recusandae repudiandae error unde beatae modi veritatis aut placeat esse. Deleniti in mollitia quod.</p>
+        </div>
+        <div class="article3">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quia vero explicabo odio, nisi assumenda voluptate impedit, in deleniti quae dolores cumque aspernatur aliquid! Molestias iusto voluptatem est aspernatur explicabo.</p>
+        </div>
+
+        <div class="footer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+
+    </div>
+</body>
+</html>
